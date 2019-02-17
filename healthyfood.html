@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<title>Home Cooking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/travel.css">
+<link rel='stylesheet' href='css/font_Roboto.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.w3-sidebar {
+  z-index: 3;
+  width: 200px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+  background-color: #5CDB95
+
+}
+
+.w3-overlay {
+  background-color: #EDF5E1
+}
+.myLink {display: none}
+
+.active {
+    background-color: #84c38b;
+      }
+.display-middle {
+  position: absolute;
+  bottom: 10%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform:translate(-50%,-50%)
+      }
+
+
+
+</style>
+
+<body> 
+<!-- Navbar -->
+  <div class="w3-top">
+  <div class="w3-bar w3-card w3-theme w3-right-align w3-large">
+    <div class="w3-bar-item w3-button w3-hide-large w3-hover-white w3-large w3-center" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></div>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    
+    <a href="photography.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Photography</a>
+    <a href="healthyfood.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white active">Home Cooking</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  </div>
+</div>
+
+
+
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme w3-animate-left" id="mySidebar">
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>☰ Menu </b></h4>
+    <a class="w3-bar-item w3-button w3-hover-white" href="index.html"><i class="fa fa-home w3-margin-right w3-large"> Home</i></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-info w3-margin-right w3-large"> About</i></a>
+    
+    <a href="photography.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-camera w3-margin-right w3-large"> Photography</i></a>
+    <a href="healthyfood.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-coffee w3-margin-right w3-large"> Home Cooking</i></a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-comment w3-margin-right w3-large"> Blog</i></a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-envelope w3-margin-right w3-large"> Contact</i></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:200px">
+
+
+<!-- !PAGE CONTENT! -->
+
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <p>I like cooking for my family. The following dishes and beverages are my home-made recipes. Spending time in the kitchen and making something special for your beloved ones is really interesting. For me, happiness sometimes is just simple like this. </p>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/1N_q2jscZEO20OhResLuSliRvjLBAPUbYehGyfQGjb6QSC4-mMKWcNR-aJrt_uSqyHW-tDEui87Toho6N2ezi4bicOnBIxQwZJ1uMuwhVJsx75bO9MD_5xWI0mdivwf_VOBBMFBCGnmwz_trf9vPPHyFVhXFmbix6ROoua0geVHsyiCbc4KxBDy3iU-0okTPOl6lULO-hnL6lDLY1ZEuPy_tCilYJ2lu2WBHBsG7QsuL_V2gHTY2FK4wPkDQBzPaZi7PV4odhA25JMOpFOFbAf8x21EUawBndBQCL8w4E5srNZ_Tp1ilOEgg_FkhktIiQ4kyjzcy6UvpLQ-aaNBX6AK_LmLQcfFmWaD3ktdnKTPbzvhJSd1zEMWaWXyakbtdCWLk_TnGd8bVp3yPaBdrjevRQ023d1Yv7k6vmy5pNKTggzOK9X_mFpJc5XKBb9GHmCXR0aTukJUP8Doy60g6KDtSmlkwTyBDVCmIMuO-JHH_dP8macD2uYF1yBAi28W53vkytHN9z1m9ID73smvHT_S3VG8CImR10WKEioXkn8I9fHszULcELpZFLuzFxLpRUYZYPCtL-NAjt407xlpM2xRIOzEIwIcr3r6jGNJNfcbXKhplaijI1VuamX8NNc8wCwWJiM8_UuRlkNcFltHsdXVeAOuM1kffIHxH2S6Wh56CswuUUU0ISe6EgcKCbKdXmdlvrYgGjlmuNi0y4Q=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Opla - Vietnamese fried eggs" class="w3-button">
+      <h3>Opla Eggs </h3>
+      <p>Vietnamese breakfast. Simple, easy to make within 5-10 mins, served with bread and vegtables</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/9fZsTOuynYipN-UL41rvLKh7kVByzKTwn4BiWXbhQu83RfvM26cNbLhpIH7HulgZ6KHNZSf8rx2tejUVIk8hc9w3XIybXgGeyax_4QuNil-DPq8Yox51oWkBZ6iraQxYuNAjpXmWyKw5yQd5smmISFBiFDbZr8dg_scn0zf8HK0iEdFsANBZwv4mxhpYtpma6jx3Zl0hbQIOYK0zVLgIseBPmxHDlRGPPF4k-Yiv9TP8tM09_srqeDLh5LWb4wBaWRzQ2jtTUhno-ElGIQNJ4xGmBxL60eNDLkuW9LCM4k0TD5oKz4swii7U5bSEtnpenAOxbS8miuFgrcxnOTlxPqs8pNHgdTwzdERvV_PERHIgRN8ss6wilHx3cyK7CY7C83nhTIF0gwEjGBSGQ3Dst6taLEp8OUqjaC4mb-KWBrS48jiZ7ItsDofCEAqi75dsPAytRE8D7INxD53Sj6dsf4SbBD1gsjTFaQH1h6SR5Cy8TRKpfb8uLYL1zmG0zP6qAN62IiY514mm1JO-3GTkva7LoFuOnx50zGMZUwEdXXJRgBRmDoCIHez0fxtncZRqA9436USbOrnFLH-xpNtAjR4GQyUFbqI_-y9j9m09x7fh78pVO3urpbveC1keLxXVmcOX5CKhWG5Bb7V3gWPucBz0ADkMgMZULOx-YOBxJnh23oRebTHQINHP_Ls_JGQIxcEPMSOff3fBt0eDVA=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Beef stew - delicous dish for winter days" class="w3-button">
+      <h3>Beef stew </h3>
+      <p> Vietnamese dish, served with bread or noodles and vegtables. This dish takes time to cook. Slow cooker is the best choice to make it </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/xq89t3h-f03AcLwRNnGKxmxuFqh177y3aX2b0QwVGtzYv__hvhIhDlRP2dwtF37McwM4q0cJAT9uYxDScO8SbCXSDRMjxRxrCJzKEvnDdBueev_FFvo9pR4ZXMeqrPSKhClH0m83g4Csgs3-xYSxIBO2exnH2TIk9u83qe33V-e-pNyX9Jqd8Sm4KQMwxGrVK7u98KqIbNubcRiKlwnODxHjPL2oFf3hGZjoPozlYl-4XxMshzy0OykEvsL5zX3Hre0QSfGWxHp3s_rGZ_EkpvAkHKsG_XyIJD_w8ljmItqtQmvq1tvNXdc_BqO1T5oauorchYdPP62SPL-7yR_fpTNOpd0m0UA0VSERV_K_LoyIrZtS5k7NE_bNnW2Tq9io20dvbmTpdTA0wxZv3Wxas6verCAgjpsG1k5N1oZ1A7JvBbO0VYExi-FB5yUogTjEabrORzwiHZtIcC6kFKsoyjMZzTov2BgVn63AIbnQa908UH_JAAW_Quo_s1VYVx5bEm4HjaJyEYIz37PN36F2VoPcbeKwhIP34hQymTd47l5ikDSveDCYRPW6TxDYHyJ91OGddvAMimrJa8Bm-JMeA9zWXDyIBkvwarqEWqCUceq9PHnMXfiP2phtNMDrvpbsdl7DgeWn8DLCV0asDuFWs5_OINBClhCnkUYkhajxfaS3GaGoYm7nOWBDave4Ibas6ILKWqRpTnIdgKtK0w=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Roasted meat - delicous dish for winter days" class="w3-button">
+      <h3>Roasted pork chops and meat balls </h3>
+      <p>Served with bread and Greek salads</p>
+      <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/8S7h2u7FHBKR04g4wWlsqM0ME9ocmfu9J_Wh2yvRJkCVv6K23gj4pPs7nYW6YX1gtfg8wADwXaXB_DY_LDQ5E9JDpcNWvMdJ3bdI3vQN3uYhPfLFBIPefBEGjcLgp53yNi2Rzp2inLpg-CsFItps7RDdYDwGtWV-k7Otq3feXDbLNpT_lkw577uITZhA5Z2e9tnFHnf53tqS5BRF_4CCl9BcxGbOwIPSazwF_vjJBjKAZncOGi0QHhOa5m-6xGtGNhEmQRE7XLs3PiCiw32chAxZwpFERhOmNWpK3YsimPVbRgdq6hehhXxoOWg_Kb56TBkqj0MRfXoSjzIkMorGJqbIoTZWv3psFrgz_7hFLIbBVnUQGzwDZxAjK42Nf-kwQWmvLmUZ7rhwGaSyFif9B_2DuwQj33xuSK2XxBEZ3ZCmbfVCzsGEx7KvPwQjO-XVJQ6hovpimX6JjuAZc0QQ5O7cjZuGOA7FM6fmQeNbp_CgZJKMCvNPapeEOFtXCKW9FZP_OLOs0R5a1Po0PQBLB1Cv_74TAS20xRge4GQyXvBE7jJcv36_ufaGq5atIEoemxqmQpiHAdxJqLtCL1i67eeBybsW3l075p-LskyW-HjoqpTUBWc8J4-MTIEQYXnglO11LTDgdjbo82kUOECUKGkk9vt1NYTkoEtVYRctIKeDOabOxxuaWpv-MwcfSnffn4-keVpkXPyHP9IKPA=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Rolls - delicious appetizer" class="w3-button">
+      <h3>Vietnamese rolls, served with soy sause glaze </h3>
+      <p>The balance between meat, vegtables, rice paper, soy sause and peanuts makes it so delicous</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/RK2EFj9dOrHOyVwqcQBXthguAXGs6FKza-SlPmWZQJuMs3aHuq1tdShUwglKAvo4Wz7E4ujznMUB50sZmp8L-6QL7cSaTm3lcZmM7DGlXTQW-djrDs9NNCchk9ptgh0PRBDwgGd9g4js3lTpuNhHioK2kds60vYFjqNC6nT0y4bx_vZqRkwd9Rpbp3nY1D-Seyzcfz1ag96pveZ05BwhNChzujzwyk7jGlzArkIygY-Am2mPWCSKQYi-HHM4hxZPTjU1w0cAwk5fFqaQsGWQrm9GkQ3jQ1oz0XaV5Lxtlz4bP7FHMc14vfLvXt_rDoMCqQY9U0kTrFFYZ1o4lzchz7ClA2-JKlk8IjPPlm_gDxrzwoxC6XaPZqg1PVCJCIwLglySkKvGq0u0X782BKhLLHyz5cbqrNaPZQx4k0p87fcOCO-4HA-43EKlUPXFZ8PDQs4Osuv2NEtVfgyOHrAOrwIqyqOC5tPLXsF-qRFaq8dnyaayJNOY1fEv8LGUlTcgVS5ZLnU9a0GWSinqmitinP8yoDpuxA9NdPXAuEHf3efT3KDVwbZJp0E3OOGvGfZ5UtyKhki6Ad9DAj7e8gMyIyQR13zFHx3ksJOxUxLVl4yZTm7_XQKkiMKMzrDHDAXyz1mJoWBmYd0TSJlVhyY063l7BoRvpmoyMJ1dV6YpGoYUffR0PWP9TyspM9nJwAZjjkY1Wil-PHzDGDDJKQ=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Chickpea salad for summer days" class="w3-button">
+      <h3>Chickpea salad</h3>
+      <p>An easy appetizer provides enough energy for someone is on a diet scheme</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/67A61KJr8r1w4ObHpSdulW9rP0HCfkQl03mBrj1F49X8kL06X2-PaKhE95CYjparFzC6JznWia1uatXo8a9epQDw1HraffrrsINPy0sZbGHgzw6TGo6suSd_xUcfwBFAoYbI95t87wpAsiJi_tk6-ewPyK81teXj5XJymIdR27D1XM2NGmwerx113tsAWlbirH0bE86DmFYXbuSjUDZiLJHK7-v00ADgo9Alu8wdAKy9xIwfOEWt9CCaWQLuQEPAS0l5gQEbXIP2CNWQu-VMUNSCp_-2ZEmILYu7pUbAq9jI-0RT9yLU9310_jnNxx8iQhR6N0fZrU4v0OlBmx3_5mMaH4IcPyMkX7iXjWHMof9IYPDrG9W3hcpj-WxtmihRF53KIeH4kmZhkEGJ_d1-YEa346b1va_7MCxUFUeOzQUC_JtQL3S-ahKcrkiynmzLRJljxVjPFJFEpGAfwc5wh0jDVPtx9dNWOTCO1R65-mRmPeboLPZbW9rWj64eKWDoEbvb5Pt5jtGQw3GKEqsNxXAUZU4ykjVUGGLD3IVrRSkUTp7evb3UigccT4gqRGx2Z3vcalCK6li07KOMUYPgkaTR9sY8n0Wyz1v0dP5TKbfGx91eh-U8VGiwgNAv7KV2O010o6mY6kKGHbrfjiivqdWC5lPiqOznD8_90q8A6-qZd-EfI8yniVsAbqfMthSyQGswDu2C5vZYAa3pLw=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="A delicious dessert" class="w3-button">
+      <h3>Cheesecake</h3>
+      <p> My cheesecake recipe includes variety of cheese without flour. It is sweet enough and perfectly serverd with tea</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/p2iOBnA5lsAMG6S5zFEMJz3fHEQbs0HZO0iflOviopGkBdyzZsQJck5_NFT3HMWasajAxc0hnaEO5Mljm6diVh_tAvgN40vgFB98bmRGrvzBMqP4YZjF3Ex1ia7ucF-q-jZUk0_51MKowJDyuEgkNLpNopq7A6QsXDkPQNRTRWbvGNPv407FTebPSr2X4cWB05cx3ORkGRF4TcNdItdbigi0ITRvJyXk4wIGup1WgkfS3wFyZUVMq0dQ8BTjwGp1KLgiO2NFHXhy8FbZmmb-xOWgDBl_YfHKnkp_F9SwcyZewvrn5izzoBXLNo6J_Pps2GSaEdTD3dNDnfJe5unYEL3oOJoffl7axo__5FjwJsWxAG_cnaxyvKtWl8IX-OzBxK844rF_EB1b9BwGQprp9ISMTUdyIly5CWMtIsl5heP6k7CCMREH3NVwRk7x0IuE5nYzuChCy7aWMz__fZ2yHB7Rb05vESxTLvA4CK3pAjHTLdZCGMN1zLHUd6gADWxKzEgY6Lzr-qH2iG1os68_dhSu2rCJlApL8ns14bLj-lmfttndok1Pj1YQMnHvI06LjVFNWDyD3oAWcKPHk0EkIsb-KFFMrLgTTgO9kuONKhJ_YCYIwmdi8tU7Vpx7tT1iaVEnEQhS_lT_9wCK2GeFCPnZs8Udm66W9xzy7DNnXp0XeRb4aUXMHPbhG-uOPsDWaKpPnEhVw5xcIidOZg=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Baklava - Greek dessert" class="w3-button">
+      <h3>Baklava</h3>
+      <p>Greek dessert served with tea.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://lh3.googleusercontent.com/qhv-bxcfzcWBWpkwCfoNU21KbkO-1BKLe_mXLDgT_wZBn9WgOK7QcLq2-9Lj9BuaBuhiuit5mR7yz7RXxx7d6u0mC-lnSYqanBSUmLRZbPRVK9Wa05_D4JMs69GEeFZGvHw5AyH2JcVkw_5cF9UYJ2oDMCzGA7hibtVd_b3asUQY4d9Uw9Nhi7_H_oSxg3wO1ISv3788z-69RcJRSa9tKlLfnWuBLLhKt6XsTiRhUk0fW_Dode-qRHJY-TMvbiqV89xEF11zVntkYVCo69gaF6GmneZG9HvxJ1eWda7pmixj0maXpxyKkRYKqOzCY2CC_I467fltmalXjJI-p47mX064RNKR6keeaNy-ySBgP3o-dCwJ6K7lDam77wZwfID9A3fke9axkRCT7fU0bernXfLPVNJ-JRjmBXY8kWrkdfRKSXhO0i7_8sX-rSxynB7UufvbwfSpt7aM33O881o6stlPTP9DheSbQNYeCBXqIw73PsY0KprT9C7Nj6UGin-6PTuzyMsGIejabCbjsZSr7mrNEA0Cxv5wUKzaTcY1szJJjOOa6_f_o1tMei8TgmIPMLQ2g73ivdFsbGLVr7QS1wTiR1VeLLNxLDON7mN6bz6GSfhFURqlCKMnlPUi7NSam7H8xEjL72rIHjoCcNn11sLtAVLXCELNdmfgzeWHGv2xP3-0vvnO6Vg_nEo1lCu3xxxfz0M-fbnlox6v_A=w1228-h750-no" style="width:100%" onclick="onClick(this)" alt="Feeling fresh with milk carrot juice" class="w3-button"> 
+      <h3>Milk Carrot Juice</h3>
+      <p>Fresh beverage for summer days</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+</div>
+
+
+
+<footer class="w3-container w3-stun w3-center w3-margin-top">
+  <p>Find me on social media:</p>
+  <a href="https://www.facebook.com/tththai" target="blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+ 
+  <a href="https://www.youtube.com/channel/UCpbDkdmaECbLzijCTa8Bg_A/featured?view_as=subscriber" target="blank"> <i class="fa fa-youtube-play w3-hover-opacity" ></i></a>
+  <a href="https://www.linkedin.com/in/thai-tran-4a113b16a" target="blank"> <i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+
+  <p>Created by Hata @ 2018. Powered by W3.CSS </p>
+</footer>
+
+
+<!-- Modal Image Gallery-->
+<script>
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+<script>
+<!--// Get the Sidebar-->
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+</body>
+</html>

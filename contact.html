@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/travel.css">
+<link rel='stylesheet' href='css/font_Roboto.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+
+.w3-sidebar {
+  z-index: 3;
+  width: 200px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+  background-color: #5CDB95
+
+}
+
+.w3-overlay {
+  background-color: #EDF5E1
+}
+
+
+.active {
+    background-color: #84c38b;
+      }
+
+.display-middle {
+  position: absolute;
+  bottom: 10%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform:translate(-50%,-50%)
+      }
+
+
+</style>
+
+<body> 
+
+
+<!-- Navbar -->
+  <div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-center w3-large w3-container w3-stun">
+    <a class="w3-bar-item w3-button w3-center w3-hide-large w3-hover-white w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+
+    <a href="photography.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Photography</a>
+    <a href="healthyfood.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Home Cooking</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button active">Contact</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme w3-animate-left" id="mySidebar">
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>☰ Menu </b></h4>
+    <a class="w3-bar-item w3-button w3-hover-white" href="index.html"><i class="fa fa-home w3-margin-right w3-large"> Home</i></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-info w3-margin-right w3-large"> About</i></a>
+
+    <a href="photography.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-camera w3-margin-right w3-large"> Photography</i></a>
+    <a href="healthyfood.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-coffee w3-margin-right w3-large"> Home Cooking</i></a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-comment w3-margin-right w3-large"> Blog</i></a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-envelope w3-margin-right w3-large"> Contact</i></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:200px">
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+  
+ <!-- Contact Section -->
+<div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+  <hr class="w3-opacity">
+  <hr class="w3-opacity">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-users fa-fw w3-xxlarge w3-margin-right"></i> Thai Tran</p>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York City, US</p>
+     
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: tththai@hotmai.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+   
+ 
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="https://formspree.io/tththai@hotmail.com" method="POST" target="_blank"/>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>  
+      <p>
+        <button type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+ </div>
+
+
+<!-- End page content -->
+</div>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+
+</body>
+<footer class="w3-container w3-stun w3-center w3-margin-top">
+  <p>Find me on social media:</p>
+  <a href="https://www.facebook.com/tththai" target="blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+ 
+  <a href="https://www.youtube.com/channel/UCpbDkdmaECbLzijCTa8Bg_A/featured?view_as=subscriber" target="blank"> <i class="fa fa-youtube-play w3-hover-opacity" ></i></a>
+  <a href="https://www.linkedin.com/in/thai-tran-4a113b16a" target="blank"> <i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+
+  <p>Created by Hata @ 2018. Powered by W3.CSS </p>
+</footer>
+</html>
